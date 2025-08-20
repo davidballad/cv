@@ -4,165 +4,486 @@
     <meta charset="utf-8">
     <meta name="author" content="David Balladares">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="David Balladares WebSite">
-    <meta name="keywords" content="David, Balladares, Projects">
-    <title>David Balladares</title>
+    <meta name="description" content="David Balladares - Software Engineer Portfolio">
+    <meta name="keywords" content="David Balladares, Software Engineer, Web Developer, Full Stack Developer">
+    <title>David Balladares | Software Engineer</title>
     <link rel="shortcut icon" href="images/favicon.ico">
     <link rel="stylesheet" href="bootstrap.min.css">
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css?family=Cinzel|Inconsolata|Saira+Semi+Condensed|Special+Elite&display=swap" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   </head>
   <body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+      <div class="container">
+        <a href="index.html" title="David Home Page" class="navbar-brand">
+          <img class="frontpage" width="auto" height="60px" src="images/ce-travel.jpg" alt="David's Home Page">
+          <span class="ml-2 font-weight-bold">David Balladares</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-  <a href="index.html" title="David Home Page"><img class="frontpage" width="auto" height="100px" src="images/ce-travel.jpg" alt="David's Home Page"></a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-
-  <div class="collapse navbar-collapse" id="navbarColor01">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item">
-        <a class="nav-link" href="projects.html">Projects / Connect</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="contact.html">Contact</a>
-      </li>
-    </ul>
-  </div>
-</nav>
-      <h1 class="heading"><em>Hi!  I am David Balladares</em><br>Software Engineer / Freelancer</h1>
-    </div>
-<hr>
-<div class="middle">
-      <h2 class="heading">I am a <a href="https://computing.njit.edu/student-clubsorganizations" target="_blank"><em>NJIT</em></a> and <a href="https://sasn.rutgers.edu/academics-admissions/academic-departments/mathematics-computer-science" target="_blank"><em>Rutgers University</em></a> Alumni</h2>
-
-      <!-- <h4>You can find me by my distinguish profile picture from my accounts</h4>
-      <img src="images/dave.jfif" alt="avatar" style="width:60px; height: 60px; border-radius:100%"> -->
-      <div id="myPic" class="focus">About me...</div>
-      <!-- <hr> -->
-      <div id="myPicShow" class="me">
-        <!-- <img class="image-me" src="images/me101.jpg" style="height:140px; border-radius:15%"alt=""> -->
-
-
-        <div class="card " style="max-width: 40rem;">
-  <div class="card-body">
-    <h4 class="card-title myDescription">/*<br/> <b> Travel Enthusiast<br />
-      l enjoy playing all type of sports and learning new languages
-      <br />My interest is Web Development,<br />
-      Full Stack Development <br /> And Database Management</b><br/>*/
-    </h4>
-  </div>
-</div>
-
+        <div class="collapse navbar-collapse" id="navbarColor01">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="projects.html">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
       </div>
-      <hr>
+    </nav>
 
-        <h3 class="heading">Skills</h3>
-
-
-            <div class="skills">
-              <img class="skill-image" src="images/java.jpg" alt="java"/>
-              <div class="progress">
-  <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 65%"></div>
-</div>
+    <!-- Hero Section -->
+    <header class="hero-section py-5 mt-5">
+      <div class="container text-center py-5">
+        <h1 class="display-4 font-weight-bold">Hi, I'm David Balladares</h1>
+        <h2 class="h3 mb-4">Software Engineer & Full Stack Developer</h2>
+        <p class="lead mb-4">Building innovative web solutions with modern technologies</p>
+        <div class="hero-buttons">
+          <a href="projects.html" class="btn btn-primary btn-lg mr-3">View My Work</a>
+          <a href="contact.html" class="btn btn-outline-primary btn-lg">Contact Me</a>
+        </div>
+      </div>
+    </header>
+    <hr>
+<!-- About Section -->
+<section id="about" class="py-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6">
+        <h2 class="section-title mb-4">About Me</h2>
+        <p class="lead">I am a <a href="https://computing.njit.edu/student-clubsorganizations" target="_blank">NJIT</a> and <a href="https://sasn.rutgers.edu/academics-admissions/academic-departments/mathematics-computer-science" target="_blank">Rutgers University</a> Alumni with a passion for creating innovative software solutions.</p>
+        
+        <div class="about-content">
+          <p>As a Software Engineer with experience at Cigna and various freelance projects, I specialize in building robust web applications and services. My technical expertise includes:</p>
+          
+          <ul class="about-list">
+            <li><i class="fas fa-check-circle"></i> Full Stack Web Development</li>
+            <li><i class="fas fa-check-circle"></i> Database Design & Management</li>
+            <li><i class="fas fa-check-circle"></i> RESTful API Development</li>
+            <li><i class="fas fa-check-circle"></i> Modern JavaScript Frameworks</li>
+          </ul>
+          
+          <p>Beyond coding, I'm a travel enthusiast who enjoys exploring new cultures and learning new languages. I'm also passionate about sports and staying active.</p>
+        </div>
+      </div>
+      
+      <div class="col-lg-6">
+        <div class="card about-card shadow-sm">
+          <div class="card-body">
+            <h3 class="card-title"><i class="fas fa-user-circle"></i> Professional Profile</h3>
+            <div class="profile-details">
+              <div class="profile-item">
+                <span class="profile-label"><i class="fas fa-graduation-cap"></i> Education:</span>
+                <span class="profile-value">Computer Science, NJIT & Rutgers University</span>
+              </div>
+              <div class="profile-item">
+                <span class="profile-label"><i class="fas fa-briefcase"></i> Current Role:</span>
+                <span class="profile-value">Software Engineer at Cigna</span>
+              </div>
+              <div class="profile-item">
+                <span class="profile-label"><i class="fas fa-code"></i> Specialization:</span>
+                <span class="profile-value">Full Stack Development, Database Management</span>
+              </div>
+              <div class="profile-item">
+                <span class="profile-label"><i class="fas fa-globe"></i> Interests:</span>
+                <span class="profile-value">Travel, Sports, Language Learning</span>
+              </div>
             </div>
-            <div class="skills">
-              <img class="skill-image" src="images/cplus.jpg" alt="cplus"/>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Skills Section -->
+<section id="skills" class="py-5 bg-light">
+  <div class="container">
+    <h2 class="section-title text-center mb-5">Technical Skills</h2>
+    
+    <div class="row">
+      <!-- Frontend Skills -->
+      <div class="col-md-6 mb-4">
+        <div class="card shadow-sm h-100">
+          <div class="card-header bg-primary text-white">
+            <h3 class="h5 mb-0"><i class="fas fa-laptop-code"></i> Frontend Development</h3>
+          </div>
+          <div class="card-body">
+            <div class="skill-item mb-3">
+              <div class="d-flex justify-content-between align-items-center mb-1">
+                <span><i class="fab fa-js"></i> JavaScript/ES6+</span>
+                <span>95%</span>
+              </div>
               <div class="progress">
-  <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 35%"></div>
-</div>
+                <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" role="progressbar" style="width: 95%" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
             </div>
-            <div class="skills">
-              <img class="skill-image" src="images/c.png" alt="c"/>
+            
+            <div class="skill-item mb-3">
+              <div class="d-flex justify-content-between align-items-center mb-1">
+                <span><i class="fab fa-react"></i> React</span>
+                <span>90%</span>
+              </div>
               <div class="progress">
-  <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 35%"></div>
-</div>
+                <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
             </div>
-            <div class="skills">
-              <img class="skill-image" src="images/php.png" alt="php"/>
+            
+            <div class="skill-item mb-3">
+              <div class="d-flex justify-content-between align-items-center mb-1">
+                <span><i class="fab fa-html5"></i> HTML5/CSS3</span>
+                <span>95%</span>
+              </div>
               <div class="progress">
-  <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
-</div>
+                <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" role="progressbar" style="width: 95%" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
             </div>
-            <div class="skills">
-              <img class="skill-image" src="images/js.jpg" alt="js"/ />
+            
+            <div class="skill-item">
+              <div class="d-flex justify-content-between align-items-center mb-1">
+                <span><i class="fab fa-bootstrap"></i> Bootstrap/Responsive Design</span>
+                <span>90%</span>
+              </div>
               <div class="progress">
-  <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 90%"></div>
-</div>
+                <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
             </div>
-            <div class="skills">
-              <img class="skill-image" src="images/node.jpg" alt="react"/ />
+          </div>
+        </div>
+      </div>
+      
+      <!-- Backend Skills -->
+      <div class="col-md-6 mb-4">
+        <div class="card shadow-sm h-100">
+          <div class="card-header bg-primary text-white">
+            <h3 class="h5 mb-0"><i class="fas fa-server"></i> Backend Development</h3>
+          </div>
+          <div class="card-body">
+            <div class="skill-item mb-3">
+              <div class="d-flex justify-content-between align-items-center mb-1">
+                <span><i class="fab fa-node-js"></i> Node.js</span>
+                <span>90%</span>
+              </div>
               <div class="progress">
-  <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 90%"></div>
-</div>
+                <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
             </div>
-            <div class="skills">
-              <img class="skill-image" src="images/mySQL.png" alt="mySQL"/ />
+            
+            <div class="skill-item mb-3">
+              <div class="d-flex justify-content-between align-items-center mb-1">
+                <span><i class="fab fa-php"></i> PHP</span>
+                <span>75%</span>
+              </div>
               <div class="progress">
-  <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 90%"></div>
-</div>
+                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
             </div>
-            <div class="skills">
-              <img class="skill-image" src="images/mongo.png" alt="mongo"/ />
+            
+            <div class="skill-item mb-3">
+              <div class="d-flex justify-content-between align-items-center mb-1">
+                <span><i class="fas fa-database"></i> MySQL</span>
+                <span>90%</span>
+              </div>
               <div class="progress">
-  <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 90%"></div>
-</div>
+                <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
             </div>
+            
+            <div class="skill-item">
+              <div class="d-flex justify-content-between align-items-center mb-1">
+                <span><i class="fas fa-database"></i> MongoDB</span>
+                <span>90%</span>
+              </div>
+              <div class="progress">
+                <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Programming Languages -->
+      <div class="col-md-6 mb-4">
+        <div class="card shadow-sm h-100">
+          <div class="card-header bg-primary text-white">
+            <h3 class="h5 mb-0"><i class="fas fa-code"></i> Programming Languages</h3>
+          </div>
+          <div class="card-body">
+            <div class="skill-item mb-3">
+              <div class="d-flex justify-content-between align-items-center mb-1">
+                <span><i class="fab fa-java"></i> Java</span>
+                <span>65%</span>
+              </div>
+              <div class="progress">
+                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 65%" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+            
+            <div class="skill-item mb-3">
+              <div class="d-flex justify-content-between align-items-center mb-1">
+                <span><i class="fas fa-code"></i> C/C++</span>
+                <span>35%</span>
+              </div>
+              <div class="progress">
+                <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning" role="progressbar" style="width: 35%" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+            
+            <div class="skill-item">
+              <div class="d-flex justify-content-between align-items-center mb-1">
+                <span><i class="fas fa-code"></i> TypeScript</span>
+                <span>85%</span>
+              </div>
+              <div class="progress">
+                <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Tools & Others -->
+      <div class="col-md-6 mb-4">
+        <div class="card shadow-sm h-100">
+          <div class="card-header bg-primary text-white">
+            <h3 class="h5 mb-0"><i class="fas fa-tools"></i> Tools & Other Skills</h3>
+          </div>
+          <div class="card-body">
+            <div class="skill-item mb-3">
+              <div class="d-flex justify-content-between align-items-center mb-1">
+                <span><i class="fab fa-git-alt"></i> Git/GitHub</span>
+                <span>90%</span>
+              </div>
+              <div class="progress">
+                <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+            
+            <div class="skill-item mb-3">
+              <div class="d-flex justify-content-between align-items-center mb-1">
+                <span><i class="fas fa-cloud"></i> AWS/Cloud Services</span>
+                <span>70%</span>
+              </div>
+              <div class="progress">
+                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+            
+            <div class="skill-item">
+              <div class="d-flex justify-content-between align-items-center mb-1">
+                <span><i class="fas fa-mobile-alt"></i> Responsive Design</span>
+                <span>85%</span>
+              </div>
+              <div class="progress">
+                <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
 
-<hr>
-      <h3 class="heading">Experience</h3>
-      <table class="table table-hover exp-table">
-        <thead>
-          <tr>
-            <th scope="col">YEAR</th>
-            <th scope="col">WORK</th>
-          </tr>
-        </thead>
+<!-- Experience Section -->
+<section id="experience" class="py-5">
+  <div class="container">
+    <h2 class="section-title text-center mb-5">Professional Experience</h2>
+    
+    <div class="timeline">
+      <!-- Cigna -->
+      <div class="timeline-item">
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="timeline-date">
+              <h3 class="h5">2021 - Present</h3>
+              <p class="text-muted">Full-time</p>
+            </div>
+          </div>
+          <div class="col-lg-8">
+            <div class="card shadow-sm mb-4">
+              <div class="card-body">
+                <h4 class="card-title">Software Engineer</h4>
+                <h5 class="card-subtitle mb-2 text-muted">Cigna</h5>
+                <p class="card-text">Developing and maintaining enterprise-level healthcare applications using modern JavaScript frameworks and cloud technologies. Collaborating with cross-functional teams to deliver high-quality software solutions.</p>
+                <div class="badge-container">
+                  <span class="badge badge-primary">React</span>
+                  <span class="badge badge-primary">Node.js</span>
+                  <span class="badge badge-primary">AWS</span>
+                  <span class="badge badge-primary">CI/CD</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Freelance -->
+      <div class="timeline-item">
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="timeline-date">
+              <h3 class="h5">2020 - 2021</h3>
+              <p class="text-muted">Contract</p>
+            </div>
+          </div>
+          <div class="col-lg-8">
+            <div class="card shadow-sm mb-4">
+              <div class="card-body">
+                <h4 class="card-title">Freelance Developer</h4>
+                <h5 class="card-subtitle mb-2 text-muted">eCommerce Web Applications</h5>
+                <p class="card-text">Designed and developed custom eCommerce solutions for small to medium-sized businesses. Implemented payment gateways, inventory management systems, and responsive user interfaces.</p>
+                <div class="badge-container">
+                  <span class="badge badge-primary">JavaScript</span>
+                  <span class="badge badge-primary">PHP</span>
+                  <span class="badge badge-primary">MySQL</span>
+                  <span class="badge badge-primary">Responsive Design</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- J.Crew -->
+      <div class="timeline-item">
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="timeline-date">
+              <h3 class="h5">2019 - 2020</h3>
+              <p class="text-muted">Full-time</p>
+            </div>
+          </div>
+          <div class="col-lg-8">
+            <div class="card shadow-sm mb-4">
+              <div class="card-body">
+                <h4 class="card-title">IT Infrastructure Support</h4>
+                <h5 class="card-subtitle mb-2 text-muted">J.Crew Corporate Office</h5>
+                <p class="card-text">Provided technical support for corporate infrastructure and applications. Collaborated with development teams to troubleshoot and resolve system issues.</p>
+                <div class="badge-container">
+                  <span class="badge badge-primary">Network Administration</span>
+                  <span class="badge badge-primary">System Troubleshooting</span>
+                  <span class="badge badge-primary">Technical Support</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- iCIMS -->
+      <div class="timeline-item">
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="timeline-date">
+              <h3 class="h5">2019</h3>
+              <p class="text-muted">Project</p>
+            </div>
+          </div>
+          <div class="col-lg-8">
+            <div class="card shadow-sm mb-4">
+              <div class="card-body">
+                <h4 class="card-title">Full Stack Developer</h4>
+                <h5 class="card-subtitle mb-2 text-muted">iCIMS</h5>
+                <p class="card-text">Contributed to the development of recruitment software solutions. Implemented new features and optimized existing functionality.</p>
+                <div class="badge-container">
+                  <span class="badge badge-primary">Full Stack Development</span>
+                  <span class="badge badge-primary">JavaScript</span>
+                  <span class="badge badge-primary">SQL</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- LabCorp -->
+      <div class="timeline-item">
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="timeline-date">
+              <h3 class="h5">2016 - 2019</h3>
+              <p class="text-muted">Full-time</p>
+            </div>
+          </div>
+          <div class="col-lg-8">
+            <div class="card shadow-sm">
+              <div class="card-body">
+                <h4 class="card-title">EDI Specialist</h4>
+                <h5 class="card-subtitle mb-2 text-muted">LabCorp</h5>
+                <p class="card-text">Managed electronic data interchange systems for healthcare information exchange. Ensured data integrity and compliance with healthcare standards.</p>
+                <div class="badge-container">
+                  <span class="badge badge-primary">EDI</span>
+                  <span class="badge badge-primary">Data Management</span>
+                  <span class="badge badge-primary">Healthcare IT</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-    <tr class="table-primary">
-      <td>2021</td>
-      <td>Software Engineer with Cigna</td>
-    </tr>
+<!-- Contact & Social Media Section -->
+<section id="contact" class="py-5 bg-light">
+  <div class="container">
+    <h2 class="section-title text-center mb-5">Connect With Me</h2>
+    
+    <div class="row justify-content-center">
+      <div class="col-md-8 text-center">
+        <p class="lead mb-5">Feel free to reach out for collaborations, opportunities, or just to say hello!</p>
+        
+        <div class="social-links mb-5">
+          <a href="https://github.com/davidballad" target="_blank" class="social-icon mx-2">
+            <i class="fab fa-github fa-3x"></i>
+            <span class="d-block mt-2">GitHub</span>
+          </a>
+          <a href="https://linkedin.com/in/david-7a4481164" target="_blank" class="social-icon mx-2">
+            <i class="fab fa-linkedin fa-3x"></i>
+            <span class="d-block mt-2">LinkedIn</span>
+          </a>
+          <a href="mailto:contact@example.com" class="social-icon mx-2">
+            <i class="fas fa-envelope fa-3x"></i>
+            <span class="d-block mt-2">Email</span>
+          </a>
+          <a href="https://twitter.com/yourusername" target="_blank" class="social-icon mx-2">
+            <i class="fab fa-twitter fa-3x"></i>
+            <span class="d-block mt-2">Twitter</span>
+          </a>
+        </div>
+        
+        <div class="contact-cta">
+          <a href="#" class="btn btn-primary btn-lg">Download Resume</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-    <tr class="table-primary">
-        <td>2020</td>
-      <td>Freelance eCommerce Web Application Development</td>
-    </tr>
-
-    <tr class="table-primary">
-      <td>2019</td>
-      <td>IT Infrastructure Support with J.Crew Corporate Office</td>
-    </tr>
-
-        <tr class="table-primary">
-      <td>2019</td>
-      <td>Full Stack Project with iCIMS</td>
-    </tr>
-
-        <tr class="table-primary">
-      <td>2016</td>
-      <td>EDI Specialist with LabCorp</td>
-    </tr>
-
-
-      </table>
-<hr>
-
-    <h3 class="heading">Direct Links</h3>
-<ul>
-  <a href="https://github.com/davidballad" target="_blank"><img class="git" src="images/github.png" alt="github logo"></a>
-  <a href="https://linkedin.com/in/david-7a4481164" target="_blank"><img class="git linked" src="images/linked.png" alt="linkedin logo"></a></a>
-</ul>
-
-
-<div class="footer navbar-dark bg-primary">
-      <h2 class="help"><a href="#top">Back to top</a></h2>
-		<p><em>I'm on Social Media:</em></p>
-
-    <div class="linkme">
+<!-- Footer -->
+<footer class="footer py-4 bg-dark text-white">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-md-6 text-center text-md-left">
+        <a href="#top" class="text-white">Back to top</a>
+      </div>
+      <div class="col-md-6 text-center text-md-right">
+        <p class="mb-0">© <span class="current-year"></span> David Ballad. All rights reserved.</p>
+      </div>
+    </div>
+  </div>
+</footer>
 
     <div>
     <a  class="a-link" href="https://www.instagram.com/davidballad/" target="_blank"><img class="socialimg" src="images/insta.jpg"></a>
