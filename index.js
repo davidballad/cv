@@ -1,27 +1,38 @@
-// Modern JavaScript with ES6
 $(document).ready(function() {
-  // Add current year to footer
-  const currentYear = new Date().getFullYear();
-  $(".current-year").text(currentYear);
-  
-  // Smooth scrolling for navigation links
+  $(".current-year").text(new Date().getFullYear());
+
   $("a[href^='#']").on('click', function(event) {
     if (this.hash !== "") {
       event.preventDefault();
-      const hash = this.hash;
-      $('html, body').animate({
-        scrollTop: $(hash).offset().top
-      }, 800, function() {
-        window.location.hash = hash;
-      });
+      var hash = this.hash;
+      $('html, body').animate({ scrollTop: $(hash).offset().top - 70 }, 600);
+      if (history.pushState) {
+        history.pushState(null, null, hash);
+      }
     }
   });
-  
-  // Initialize skill progress bars with animation
-  $('.progress-bar').each(function() {
-    const width = $(this).attr('aria-valuenow') + '%';
-    $(this).css('width', '0%').animate({
-      width: width
-    }, 1000);
+
+  var animateProgressBars = function() {
+    $('.progress-bar').each(function() {
+      var $bar = $(this);
+      if ($bar.data('animated')) return;
+      var rect = this.getBoundingClientRect();
+      if (rect.top < window.innerHeight && rect.bottom > 0) {
+        var width = $bar.attr('aria-valuenow') + '%';
+        $bar.css('width', '0%').animate({ width: width }, 800);
+        $bar.data('animated', true);
+      }
+    });
+  };
+
+  animateProgressBars();
+  $(window).on('scroll', animateProgressBars);
+
+  $(window).on('scroll', function() {
+    if ($(this).scrollTop() > 50) {
+      $('.navbar').css('box-shadow', '0 2px 12px rgba(0,0,0,0.15)');
+    } else {
+      $('.navbar').css('box-shadow', '0 1px 3px rgba(0,0,0,0.08)');
+    }
   });
 });
