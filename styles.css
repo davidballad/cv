@@ -671,3 +671,51 @@ hr {
 
   .badge-primary { font-size: 0.7rem; padding: 0.25rem 0.5rem; }
 }
+
+/* ---- Language Switcher ---- */
+.lang-switcher {
+  display: flex;
+  align-items: center;
+}
+
+.lang-switcher .btn-outline-light {
+  border-color: rgba(255,255,255,0.25);
+  font-size: 1.15rem;
+  padding: 0.25rem 0.6rem;
+  line-height: 1;
+  border-radius: var(--radius);
+  transition: var(--transition);
+}
+
+.lang-switcher .btn-outline-light:hover,
+.lang-switcher .btn-outline-light:focus {
+  background: rgba(255,255,255,0.1);
+  border-color: rgba(255,255,255,0.4);
+  box-shadow: none;
+}
+
+.lang-switcher .dropdown-menu {
+  min-width: 140px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-md);
+  padding: 0.35rem 0;
+  margin-top: 0.5rem;
+}
+
+.lang-switcher .dropdown-item {
+  font-size: 0.9rem;
+  padding: 0.45rem 1rem;
+  color: var(--text-body);
+  transition: var(--transition);
+}
+
+.lang-switcher .dropdown-item:hover,
+.lang-switcher .dropdown-item.active {
+  background: var(--accent-light);
+  color: var(--accent-hover);
+}
+
+.lang-switcher .dropdown-item.active {
+  font-weight: 600;
+}
