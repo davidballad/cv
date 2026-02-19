@@ -4,93 +4,219 @@
     <meta charset="utf-8">
     <meta name="author" content="David Balladares">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="David, Balladares, Projects">
-    <title>David B: My Projects</title>
+    <meta name="description" content="David Balladares - Projects & Work">
+    <meta name="keywords" content="David Balladares, Projects, Cloud Engineer, AWS">
+    <title>David Balladares | Projects</title>
     <link rel="shortcut icon" href="images/favicon.ico">
     <link rel="stylesheet" href="bootstrap.min.css">
     <link rel="stylesheet" href="styles.css">
-
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-  <a href="index.html" title="David Home Page"><img class="frontpage" width="auto" height="100px" src="images/ce-travel.jpg" alt="David's Home Page"></a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-
-  <div class="collapse navbar-collapse" id="navbarColor01">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item">
-        <a class="nav-link" href="projects.html">Projects / Connect</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="contact.html">Contact</a>
-      </li>
-    </ul>
-  </div>
-</nav>
-    <h1 class="heading">Projects</h1>
-
-
-    <h3>Here you can find general description of some of my projects:</h3>
-
-
-    <div class="jumbotron">
-  <h2 class="display-3">Online Exam System</h2>
-
-  <p class="lead projects">Three tier architecture. I worked in a group of 3 to create an Online Exam System for NJIT students and instructors. The application allows instructors to create questions, create exams and release exam grades. The student can take these created exams and review the score. Check out my GitHub below for more info.</p>
-  <p class="lead">
-    <a class="btn btn-primary btn-lg" href="https://github.com/davidballad/OnlineExamSystem" target="_blank" role="button">Learn more</a>
-  </p>
-  <img src="" alt="">
-</div>
-
-<div class="jumbotron">
-<h2 class="display-3">Internship Search Engine</h2>
-
-<p class="lead projects">This application is used to find Information Systems and Computer Science internships. I used React and the application is being hosted by a s3 Amazon bucket. It extracts the most current internship oportunities using a custom Diffbot API. Check out my GitHub below for more info.</p>
-<p class="lead">
-<a class="btn btn-primary btn-lg" href="https://github.com/davidballad/CS-IS-Internship-Search-Engine" target="_blank" role="button">Learn more</a>
-</p>
-<img src="" alt="">
-</div>
-
-<hr>
-
-<h1 class="heading">Connect</h1>
-
-    <ul>
-      <a href="https://github.com/davidballad" target="_blank"><img class="git" src="images/github.png" alt="github logo"></a>
-      <a href="https://linkedin.com/in/david-7a4481164" target="_blank"><img class="git linked" src="images/linked.png" alt="linkedin logo"></a></a>
-    </ul>
-
-
-    <div class="footer navbar-dark bg-primary">
-          <h2 class="help"><a href="#top">Back to top</a></h2>
-    		<p><em>I'm on Social Media:</em></p>
-
-        <div class="linkme">
-
-        <div>
-        <a  class="a-link" href="https://www.instagram.com/davidballad/" target="_blank"><img class="socialimg" src="images/insta.jpg"></a>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+      <div class="container">
+        <a href="index.html" title="David Home Page" class="navbar-brand">
+          <img class="frontpage" width="auto" height="40px" src="images/ce-travel.jpg" alt="David's Home Page">
+          <span class="ml-2 font-weight-bold">David Balladares</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarColor01">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="projects.html">Projects <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
         </div>
-        <div class="moo">
-          <img class="socialimg " src="images/dis.png">
-          <span class="mootext">davis1243#2356</span>
-        </div>
-
-        </div>
-
-
-        <p class="cdate"> David Balladares</p>
       </div>
+    </nav>
 
-      <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> -->
-      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-      <script src="index.js" charset="utf-8"></script>
+    <!-- Page Header -->
+    <header class="page-header">
+      <div class="container">
+        <h1>Projects</h1>
+        <p class="lead mb-0">A selection of academic and personal work</p>
+      </div>
+    </header>
 
+    <!-- Projects Section -->
+    <section class="py-5">
+      <div class="container">
+        <div class="row">
 
+          <!-- Online Exam System -->
+          <div class="col-md-6 col-lg-4 mb-4">
+            <div class="card project-card shadow-sm">
+              <div class="card-body">
+                <div class="project-icon">
+                  <i class="fas fa-file-alt"></i>
+                </div>
+                <h4 class="card-title">Online Exam System</h4>
+                <p class="card-text">Three-tier architecture built in a team of 3 for NJIT students and instructors. Instructors create questions and exams, students take exams and review scores.</p>
+                <div class="badge-container mb-3">
+                  <span class="badge badge-primary">Full Stack</span>
+                  <span class="badge badge-primary">Three-Tier</span>
+                  <span class="badge badge-primary">Team Project</span>
+                </div>
+                <a class="btn btn-sm btn-outline-primary" href="https://github.com/davidballad/OnlineExamSystem" target="_blank">
+                  <i class="fab fa-github mr-1"></i> View on GitHub
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Internship Search Engine -->
+          <div class="col-md-6 col-lg-4 mb-4">
+            <div class="card project-card shadow-sm">
+              <div class="card-body">
+                <div class="project-icon">
+                  <i class="fas fa-search"></i>
+                </div>
+                <h4 class="card-title">Internship Search Engine</h4>
+                <p class="card-text">React application hosted on AWS S3 that extracts the most current CS and IS internship opportunities using a custom Diffbot API.</p>
+                <div class="badge-container mb-3">
+                  <span class="badge badge-primary">React</span>
+                  <span class="badge badge-primary">AWS S3</span>
+                  <span class="badge badge-primary">Diffbot API</span>
+                </div>
+                <a class="btn btn-sm btn-outline-primary" href="https://github.com/davidballad/CS-IS-Internship-Search-Engine" target="_blank">
+                  <i class="fab fa-github mr-1"></i> View on GitHub
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Cloud Chatbot -->
+          <div class="col-md-6 col-lg-4 mb-4">
+            <div class="card project-card shadow-sm">
+              <div class="card-body">
+                <div class="project-icon">
+                  <i class="fas fa-robot"></i>
+                </div>
+                <h4 class="card-title">Cloud Community Chatbot</h4>
+                <p class="card-text">Scalable AI-powered chatbot built on AWS Lambda, API Gateway, Route 53, and DynamoDB with Webex webhooks for cloud community query management.</p>
+                <div class="badge-container mb-3">
+                  <span class="badge badge-primary">AWS Lambda</span>
+                  <span class="badge badge-primary">AI</span>
+                  <span class="badge badge-primary">DynamoDB</span>
+                </div>
+                <span class="text-muted" style="font-size:0.85rem;"><i class="fas fa-lock mr-1"></i> Enterprise / Internal</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- RAG Knowledge System -->
+          <div class="col-md-6 col-lg-4 mb-4">
+            <div class="card project-card shadow-sm">
+              <div class="card-body">
+                <div class="project-icon">
+                  <i class="fas fa-brain"></i>
+                </div>
+                <h4 class="card-title">RAG Knowledge System</h4>
+                <p class="card-text">Self-learning knowledge system using Amazon Bedrock, S3 vector embeddings, and a feedback loop that continuously improves answer quality.</p>
+                <div class="badge-container mb-3">
+                  <span class="badge badge-primary">RAG</span>
+                  <span class="badge badge-primary">Amazon Bedrock</span>
+                  <span class="badge badge-primary">Vector Search</span>
+                </div>
+                <span class="text-muted" style="font-size:0.85rem;"><i class="fas fa-lock mr-1"></i> Enterprise / Internal</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- AgentCore -->
+          <div class="col-md-6 col-lg-4 mb-4">
+            <div class="card project-card shadow-sm">
+              <div class="card-body">
+                <div class="project-icon">
+                  <i class="fas fa-cogs"></i>
+                </div>
+                <h4 class="card-title">AgentCore Applications</h4>
+                <p class="card-text">AI agent applications that automate cloud support workflows and decision-making across engineering teams.</p>
+                <div class="badge-container mb-3">
+                  <span class="badge badge-primary">AgentCore</span>
+                  <span class="badge badge-primary">AI Agents</span>
+                  <span class="badge badge-primary">Automation</span>
+                </div>
+                <span class="text-muted" style="font-size:0.85rem;"><i class="fas fa-lock mr-1"></i> Enterprise / Internal</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Cost Anomaly Automation -->
+          <div class="col-md-6 col-lg-4 mb-4">
+            <div class="card project-card shadow-sm">
+              <div class="card-body">
+                <div class="project-icon">
+                  <i class="fas fa-chart-line"></i>
+                </div>
+                <h4 class="card-title">AWS Cost Anomaly Alerting</h4>
+                <p class="card-text">Automated Python solution to detect and alert AWS account owners of cost anomalies within 24 hours, integrated with Cloudability.</p>
+                <div class="badge-container mb-3">
+                  <span class="badge badge-primary">Python</span>
+                  <span class="badge badge-primary">AWS</span>
+                  <span class="badge badge-primary">Cloudability</span>
+                </div>
+                <span class="text-muted" style="font-size:0.85rem;"><i class="fas fa-lock mr-1"></i> Enterprise / Internal</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Connect Section -->
+    <section class="py-5 bg-light">
+      <div class="container text-center">
+        <h2 class="section-title mb-4">Want to see more?</h2>
+        <p class="lead mb-4">Check out my GitHub for additional projects and code samples.</p>
+        <div class="social-links mb-4">
+          <a href="https://github.com/davidballad" target="_blank" class="social-icon mx-3">
+            <i class="fab fa-github fa-2x"></i>
+            <span class="d-block mt-2">GitHub</span>
+          </a>
+          <a href="https://linkedin.com/in/david-7a4481164" target="_blank" class="social-icon mx-3">
+            <i class="fab fa-linkedin fa-2x"></i>
+            <span class="d-block mt-2">LinkedIn</span>
+          </a>
+        </div>
+        <a href="contact.html" class="btn btn-primary btn-lg">Get in Touch</a>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer py-4">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-4 text-center text-md-left mb-2 mb-md-0">
+            <a href="#top" class="text-white" style="font-size:0.9rem;">Back to top</a>
+          </div>
+          <div class="col-md-4 text-center mb-2 mb-md-0">
+            <div class="footer-social">
+              <a href="https://github.com/davidballad" target="_blank"><i class="fab fa-github"></i></a>
+              <a href="https://linkedin.com/in/david-7a4481164" target="_blank"><i class="fab fa-linkedin"></i></a>
+            </div>
+          </div>
+          <div class="col-md-4 text-center text-md-right">
+            <p class="mb-0" style="font-size:0.85rem;">&copy; <span class="current-year"></span> David Balladares</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src="index.js" charset="utf-8"></script>
   </body>
 </html>
