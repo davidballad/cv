@@ -19,7 +19,10 @@ $(document).ready(function() {
       var rect = this.getBoundingClientRect();
       if (rect.top < window.innerHeight && rect.bottom > 0) {
         var width = $bar.attr('aria-valuenow') + '%';
-        $bar.css('width', '0%').animate({ width: width }, 800);
+        this.style.width = '0%';
+        var el = this;
+        void el.offsetWidth;
+        el.style.width = width;
         $bar.data('animated', true);
       }
     });

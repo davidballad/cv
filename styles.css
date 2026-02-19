@@ -305,6 +305,7 @@ p {
 .progress-bar {
   border-radius: 4px;
   background: linear-gradient(90deg, var(--accent), var(--primary-light));
+  transition: width 0.8s ease-out;
 }
 
 .progress-bar.bg-success {
