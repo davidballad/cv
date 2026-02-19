@@ -4,9 +4,9 @@
     <meta charset="utf-8">
     <meta name="author" content="David Balladares">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="David Balladares - AI Automation, CRM Integration & Messaging Workflows with n8n">
-    <meta name="keywords" content="David Balladares, AI Automation, CRM, n8n, Workflow Automation, Messaging Automation">
-    <title>David Balladares | AI Automation Services</title>
+    <meta name="description" content="AI-Powered CRM for Small Businesses | Inventory, Purchases & Transactions | n8n Automation">
+    <meta name="keywords" content="CRM, AI CRM, Small Business CRM, Inventory Management, n8n Automation, Restaurant CRM, Retail CRM">
+    <title>David Balladares | CRM AI & Automation Services</title>
     <link rel="shortcut icon" href="images/favicon.ico">
     <link rel="stylesheet" href="bootstrap.min.css">
     <link rel="stylesheet" href="styles.css">
@@ -27,18 +27,30 @@
         <div class="collapse navbar-collapse" id="navbarColor01">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link" href="index.html">Home</a>
+              <a class="nav-link" href="index.html"><span data-i18n="nav.home">Home</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="projects.html">Projects</a>
+              <a class="nav-link" href="projects.html"><span data-i18n="nav.projects">Projects</span></a>
             </li>
             <li class="nav-item active">
-              <a class="nav-link" href="services.html">Services <span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="services.html"><span data-i18n="nav.services">Services</span> <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="contact.html">Contact</a>
+              <a class="nav-link" href="contact.html"><span data-i18n="nav.contact">Contact</span></a>
             </li>
           </ul>
+          <div class="lang-switcher ml-3">
+            <div class="dropdown">
+              <button class="btn btn-sm btn-outline-light dropdown-toggle" type="button" id="langDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <span id="currentLangLabel">🇺🇸</span>
+              </button>
+              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="langDropdown">
+                <a class="dropdown-item lang-btn" href="#" data-lang="en">🇺🇸 English</a>
+                <a class="dropdown-item lang-btn" href="#" data-lang="es">🇪🇸 Español</a>
+                <a class="dropdown-item lang-btn" href="#" data-lang="it">🇮🇹 Italiano</a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </nav>
@@ -46,41 +58,81 @@
     <!-- Page Header -->
     <header class="page-header">
       <div class="container">
-        <h1>AI Automation Services</h1>
-        <p class="lead mb-0">Helping businesses work smarter with AI-powered CRM, messaging, and workflow automation</p>
+        <h1 data-i18n="svc.hero.title">AI-Powered Solutions for Your Business</h1>
+        <p class="lead mb-0" data-i18n="svc.hero.subtitle">Smart CRM, inventory management, and workflow automation built for small businesses</p>
       </div>
     </header>
 
-    <!-- Intro Section -->
+    <!-- ==============================
+         SECTION 1: CRM AI PRODUCT
+         ============================== -->
     <section class="py-5">
       <div class="container">
         <div class="row align-items-center">
           <div class="col-lg-7 mb-4 mb-lg-0">
-            <h2 class="mb-3">Automate. Integrate. Scale.</h2>
-            <p class="lead">I help small-to-mid-size businesses eliminate manual work by connecting their CRM, messaging, and internal tools through intelligent automation powered by AI and <strong>n8n</strong>.</p>
-            <p>Whether you need to auto-qualify leads, send personalized follow-ups, sync data across platforms, or build AI-driven chatbots that handle customer inquiries 24/7 — I design and build the workflows end-to-end so you can focus on growing your business.</p>
-            <a href="contact.html" class="btn btn-primary btn-lg mt-2">
-              <i class="fas fa-paper-plane mr-2"></i>Let's Talk
-            </a>
+            <span class="badge badge-primary mb-3" style="font-size:0.85rem;" data-i18n="svc.crm.badge">CRM AI System</span>
+            <h2 class="mb-3" data-i18n="svc.crm.headline">A CRM Built for Restaurants, Retail & Bars</h2>
+            <p class="lead" data-i18n="svc.crm.intro">An AI-powered CRM designed specifically for small businesses that need to track inventory, manage purchases, and handle transactions — all in one place. No bloated enterprise software, just the tools you actually need.</p>
+            <p data-i18n="svc.crm.intro2">Whether you run a restaurant tracking ingredients and suppliers, a clothing store managing stock and sales, or a bar handling tabs and inventory — this system adapts to your workflow and uses AI to help you make smarter business decisions.</p>
           </div>
           <div class="col-lg-5">
             <div class="contact-info-card">
-              <h4 class="mb-4"><i class="fas fa-bolt mr-2"></i>Why Automate?</h4>
+              <h4 class="mb-4" data-i18n="svc.crm.features.title">What It Does</h4>
               <div class="contact-info-item">
-                <i class="fas fa-clock"></i>
-                <span><strong>Save 10+ hours/week</strong> on repetitive tasks like data entry, follow-ups, and reporting</span>
+                <i class="fas fa-boxes"></i>
+                <span data-i18n="svc.crm.feat1"><strong>Inventory Tracking</strong> — Real-time stock levels, low-stock alerts, and supplier management</span>
               </div>
               <div class="contact-info-item">
-                <i class="fas fa-dollar-sign"></i>
-                <span><strong>Reduce costs</strong> by replacing manual processes with reliable automated workflows</span>
+                <i class="fas fa-shopping-cart"></i>
+                <span data-i18n="svc.crm.feat2"><strong>Purchase Management</strong> — Track orders, vendor invoices, costs, and delivery schedules</span>
               </div>
               <div class="contact-info-item">
-                <i class="fas fa-chart-line"></i>
-                <span><strong>Never miss a lead</strong> with instant responses and smart routing</span>
+                <i class="fas fa-cash-register"></i>
+                <span data-i18n="svc.crm.feat3"><strong>Transaction Handling</strong> — Process sales, manage tabs, generate receipts, and track revenue</span>
               </div>
               <div class="contact-info-item mb-0">
-                <i class="fas fa-sync-alt"></i>
-                <span><strong>Keep everything in sync</strong> across CRM, email, messaging, and databases</span>
+                <i class="fas fa-robot"></i>
+                <span data-i18n="svc.crm.feat4"><strong>AI Insights</strong> — Demand forecasting, spending trends, and smart reorder suggestions</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Industries -->
+        <div class="row mt-5">
+          <div class="col-12 text-center mb-4">
+            <h3 data-i18n="svc.crm.industries.title">Built For</h3>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card project-card shadow-sm text-center">
+              <div class="card-body">
+                <div class="project-icon mx-auto">
+                  <i class="fas fa-utensils"></i>
+                </div>
+                <h5 class="card-title" data-i18n="svc.crm.ind1.title">Restaurants & Food</h5>
+                <p class="card-text" data-i18n="svc.crm.ind1.desc">Track ingredients, manage supplier orders, monitor food costs, and reduce waste with AI-powered demand forecasting.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card project-card shadow-sm text-center">
+              <div class="card-body">
+                <div class="project-icon mx-auto">
+                  <i class="fas fa-tshirt"></i>
+                </div>
+                <h5 class="card-title" data-i18n="svc.crm.ind2.title">Clothing & Retail</h5>
+                <p class="card-text" data-i18n="svc.crm.ind2.desc">Manage product catalog, track sizes and variants, handle point-of-sale transactions, and monitor sales trends across seasons.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card project-card shadow-sm text-center">
+              <div class="card-body">
+                <div class="project-icon mx-auto">
+                  <i class="fas fa-cocktail"></i>
+                </div>
+                <h5 class="card-title" data-i18n="svc.crm.ind3.title">Bars & Nightlife</h5>
+                <p class="card-text" data-i18n="svc.crm.ind3.desc">Track drink inventory, manage tabs and transactions, monitor pour costs, and get AI alerts when stock runs low on busy nights.</p>
               </div>
             </div>
           </div>
@@ -88,178 +140,152 @@
       </div>
     </section>
 
-    <!-- Services Grid -->
+    <!-- ==============================
+         SECTION 2: CUSTOM CRM BUILDS
+         ============================== -->
     <section class="py-5 bg-light">
       <div class="container">
-        <h2 class="section-title text-center mb-5">What I Build</h2>
-        <div class="row">
-
-          <!-- CRM Automation -->
-          <div class="col-md-6 col-lg-4 mb-4">
-            <div class="card project-card shadow-sm">
-              <div class="card-body">
-                <div class="project-icon">
-                  <i class="fas fa-address-book"></i>
+        <div class="row align-items-center">
+          <div class="col-lg-5 mb-4 mb-lg-0 order-lg-2">
+            <span class="badge badge-info mb-3" style="font-size:0.85rem;" data-i18n="svc.custom.badge">Custom Development</span>
+            <h2 class="mb-3" data-i18n="svc.custom.headline">Need Something Different?</h2>
+            <p class="lead" data-i18n="svc.custom.intro">If your business has unique needs that go beyond the standard CRM, I also build fully custom CRM solutions tailored to your specific workflow, industry, and scale.</p>
+            <p data-i18n="svc.custom.intro2">From custom dashboards and reporting to integrations with your existing tools — I'll design, develop, and deploy a system that fits your business like a glove.</p>
+            <a href="contact.html" class="btn btn-primary mt-2">
+              <i class="fas fa-comments mr-2"></i><span data-i18n="svc.custom.btn">Discuss Your Project</span>
+            </a>
+          </div>
+          <div class="col-lg-7 order-lg-1">
+            <div class="row">
+              <div class="col-sm-6 mb-3">
+                <div class="card shadow-sm h-100">
+                  <div class="card-body">
+                    <i class="fas fa-paint-brush text-accent mb-2" style="font-size:1.3rem;"></i>
+                    <h6 class="font-weight-bold" data-i18n="svc.custom.f1.title">Custom Dashboards</h6>
+                    <p class="card-text mb-0" style="font-size:0.9rem;" data-i18n="svc.custom.f1.desc">Real-time views designed around the metrics that matter to your business.</p>
+                  </div>
                 </div>
-                <h4 class="card-title">CRM Automation</h4>
-                <p class="card-text">Auto-capture leads from forms, ads, and landing pages. Enrich contact records, assign scores, trigger follow-up sequences, and sync everything with your CRM in real time.</p>
-                <div class="badge-container">
-                  <span class="badge badge-primary">HubSpot</span>
-                  <span class="badge badge-primary">Salesforce</span>
-                  <span class="badge badge-primary">Pipedrive</span>
-                  <span class="badge badge-primary">n8n</span>
+              </div>
+              <div class="col-sm-6 mb-3">
+                <div class="card shadow-sm h-100">
+                  <div class="card-body">
+                    <i class="fas fa-plug text-accent mb-2" style="font-size:1.3rem;"></i>
+                    <h6 class="font-weight-bold" data-i18n="svc.custom.f2.title">Third-Party Integrations</h6>
+                    <p class="card-text mb-0" style="font-size:0.9rem;" data-i18n="svc.custom.f2.desc">Connect to payment processors, accounting software, POS systems, and more.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6 mb-3">
+                <div class="card shadow-sm h-100">
+                  <div class="card-body">
+                    <i class="fas fa-mobile-alt text-accent mb-2" style="font-size:1.3rem;"></i>
+                    <h6 class="font-weight-bold" data-i18n="svc.custom.f3.title">Mobile-Friendly</h6>
+                    <p class="card-text mb-0" style="font-size:0.9rem;" data-i18n="svc.custom.f3.desc">Manage your business from your phone — check inventory, approve orders, view sales.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6 mb-3">
+                <div class="card shadow-sm h-100">
+                  <div class="card-body">
+                    <i class="fas fa-chart-pie text-accent mb-2" style="font-size:1.3rem;"></i>
+                    <h6 class="font-weight-bold" data-i18n="svc.custom.f4.title">AI-Powered Reports</h6>
+                    <p class="card-text mb-0" style="font-size:0.9rem;" data-i18n="svc.custom.f4.desc">Automated summaries, forecasts, and actionable insights delivered to you.</p>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
+        </div>
+      </div>
+    </section>
 
-          <!-- Messaging Automation -->
-          <div class="col-md-6 col-lg-4 mb-4">
-            <div class="card project-card shadow-sm">
+    <!-- ==============================
+         SECTION 3: n8n AUTOMATION
+         ============================== -->
+    <section class="py-5">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-7 mb-4 mb-lg-0">
+            <span class="badge badge-primary mb-3" style="font-size:0.85rem;" data-i18n="svc.n8n.badge">Workflow Automation</span>
+            <h2 class="mb-3" data-i18n="svc.n8n.headline">Automate Everything with n8n</h2>
+            <p class="lead" data-i18n="svc.n8n.intro">Beyond the CRM, I build powerful workflow automations using <strong>n8n</strong> — an open-source automation platform. Use it standalone to connect any tools you already have, or plug it into the CRM to supercharge your operations.</p>
+            <p data-i18n="svc.n8n.intro2">Automatically send purchase orders when stock runs low, notify staff on Slack or WhatsApp when a delivery arrives, generate end-of-day reports, sync data with your accounting software — if it can be automated, I can build it.</p>
+          </div>
+          <div class="col-lg-5">
+            <div class="card shadow-sm">
               <div class="card-body">
-                <div class="project-icon">
-                  <i class="fas fa-comments"></i>
-                </div>
-                <h4 class="card-title">Messaging Automation</h4>
-                <p class="card-text">Automated outreach and follow-ups across WhatsApp, SMS, email, and Slack. Personalized messages triggered by customer actions, schedules, or AI-driven intent signals.</p>
-                <div class="badge-container">
-                  <span class="badge badge-primary">WhatsApp</span>
-                  <span class="badge badge-primary">SMS</span>
-                  <span class="badge badge-primary">Email</span>
-                  <span class="badge badge-primary">Slack</span>
-                </div>
+                <h5 class="mb-3" data-i18n="svc.n8n.examples.title">What You Can Automate</h5>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item" data-i18n="svc.n8n.ex1"><i class="fas fa-check text-success mr-2"></i>Auto-reorder from suppliers when inventory is low</li>
+                  <li class="list-group-item" data-i18n="svc.n8n.ex2"><i class="fas fa-check text-success mr-2"></i>Send WhatsApp/SMS confirmations for orders and deliveries</li>
+                  <li class="list-group-item" data-i18n="svc.n8n.ex3"><i class="fas fa-check text-success mr-2"></i>Sync transactions with QuickBooks, Xero, or Google Sheets</li>
+                  <li class="list-group-item" data-i18n="svc.n8n.ex4"><i class="fas fa-check text-success mr-2"></i>Daily/weekly AI-generated business reports via email or Slack</li>
+                  <li class="list-group-item" data-i18n="svc.n8n.ex5"><i class="fas fa-check text-success mr-2"></i>Customer follow-ups and loyalty messaging on autopilot</li>
+                  <li class="list-group-item" data-i18n="svc.n8n.ex6"><i class="fas fa-check text-success mr-2"></i>Connect your CRM to any API or third-party service</li>
+                </ul>
               </div>
             </div>
           </div>
+        </div>
 
-          <!-- AI Chatbots -->
-          <div class="col-md-6 col-lg-4 mb-4">
-            <div class="card project-card shadow-sm">
-              <div class="card-body">
-                <div class="project-icon">
-                  <i class="fas fa-robot"></i>
-                </div>
-                <h4 class="card-title">AI Chatbots & Assistants</h4>
-                <p class="card-text">Custom AI chatbots that answer customer questions, qualify leads, book meetings, and escalate to humans when needed — trained on your business data.</p>
-                <div class="badge-container">
-                  <span class="badge badge-primary">OpenAI</span>
-                  <span class="badge badge-primary">Amazon Bedrock</span>
-                  <span class="badge badge-primary">RAG</span>
-                  <span class="badge badge-primary">n8n</span>
-                </div>
-              </div>
+        <!-- CRM + n8n combo callout -->
+        <div class="row mt-5">
+          <div class="col-12">
+            <div class="contact-info-card text-center" style="padding:2rem;">
+              <h4 class="mb-2" data-i18n="svc.combo.title">CRM + n8n = Full Autopilot</h4>
+              <p class="mb-0" style="color:rgba(255,255,255,0.85); max-width:700px; margin:0 auto;" data-i18n="svc.combo.desc">Combine the CRM AI System with n8n automations for a fully connected business. Track inventory, handle transactions, and let automations take care of reorders, notifications, reports, and customer messaging — all without lifting a finger.</p>
             </div>
           </div>
-
-          <!-- n8n Workflows -->
-          <div class="col-md-6 col-lg-4 mb-4">
-            <div class="card project-card shadow-sm">
-              <div class="card-body">
-                <div class="project-icon">
-                  <i class="fas fa-project-diagram"></i>
-                </div>
-                <h4 class="card-title">n8n Workflow Design</h4>
-                <p class="card-text">Custom n8n workflows that connect your tools — CRM, databases, APIs, spreadsheets, messaging apps — into seamless automated pipelines. No vendor lock-in.</p>
-                <div class="badge-container">
-                  <span class="badge badge-primary">n8n</span>
-                  <span class="badge badge-primary">REST APIs</span>
-                  <span class="badge badge-primary">Webhooks</span>
-                  <span class="badge badge-primary">Self-Hosted</span>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Data Sync -->
-          <div class="col-md-6 col-lg-4 mb-4">
-            <div class="card project-card shadow-sm">
-              <div class="card-body">
-                <div class="project-icon">
-                  <i class="fas fa-database"></i>
-                </div>
-                <h4 class="card-title">Data Sync & Pipelines</h4>
-                <p class="card-text">Keep your data consistent across platforms. Automated ETL pipelines that move, transform, and sync data between your CRM, databases, spreadsheets, and reporting tools.</p>
-                <div class="badge-container">
-                  <span class="badge badge-primary">ETL</span>
-                  <span class="badge badge-primary">Google Sheets</span>
-                  <span class="badge badge-primary">Airtable</span>
-                  <span class="badge badge-primary">Databases</span>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Reporting -->
-          <div class="col-md-6 col-lg-4 mb-4">
-            <div class="card project-card shadow-sm">
-              <div class="card-body">
-                <div class="project-icon">
-                  <i class="fas fa-chart-bar"></i>
-                </div>
-                <h4 class="card-title">Automated Reporting</h4>
-                <p class="card-text">Scheduled reports delivered to Slack, email, or dashboards. AI-generated summaries, KPI tracking, and alerts so you always know what's happening in your business.</p>
-                <div class="badge-container">
-                  <span class="badge badge-primary">Dashboards</span>
-                  <span class="badge badge-primary">Slack Alerts</span>
-                  <span class="badge badge-primary">AI Summaries</span>
-                  <span class="badge badge-primary">n8n</span>
-                </div>
-              </div>
-            </div>
-          </div>
-
         </div>
       </div>
     </section>
 
     <!-- How It Works -->
-    <section class="py-5">
+    <section class="py-5 bg-light">
       <div class="container">
-        <h2 class="section-title text-center mb-5">How It Works</h2>
+        <h2 class="section-title text-center mb-5" data-i18n="svc.how.title">How It Works</h2>
         <div class="row text-center">
           <div class="col-md-3 mb-4">
             <div class="mb-3">
               <span style="display:inline-flex;align-items:center;justify-content:center;width:56px;height:56px;border-radius:50%;background:var(--accent-light);color:var(--accent);font-size:1.5rem;font-weight:700;">1</span>
             </div>
-            <h5>Discovery Call</h5>
-            <p style="font-size:0.9rem;">We discuss your current tools, pain points, and goals. I map out what can be automated.</p>
+            <h5 data-i18n="svc.step1.title">Discovery Call</h5>
+            <p style="font-size:0.9rem;" data-i18n="svc.step1.desc">We discuss your business, what you sell, how you track inventory, and what pain points you want solved.</p>
           </div>
           <div class="col-md-3 mb-4">
             <div class="mb-3">
               <span style="display:inline-flex;align-items:center;justify-content:center;width:56px;height:56px;border-radius:50%;background:var(--accent-light);color:var(--accent);font-size:1.5rem;font-weight:700;">2</span>
             </div>
-            <h5>Design & Propose</h5>
-            <p style="font-size:0.9rem;">I design the automation architecture and present a clear plan with timelines and pricing.</p>
+            <h5 data-i18n="svc.step2.title">Setup & Configure</h5>
+            <p style="font-size:0.9rem;" data-i18n="svc.step2.desc">I set up your CRM with your products, suppliers, and pricing. Plus any n8n automations you need.</p>
           </div>
           <div class="col-md-3 mb-4">
             <div class="mb-3">
               <span style="display:inline-flex;align-items:center;justify-content:center;width:56px;height:56px;border-radius:50%;background:var(--accent-light);color:var(--accent);font-size:1.5rem;font-weight:700;">3</span>
             </div>
-            <h5>Build & Test</h5>
-            <p style="font-size:0.9rem;">I build the workflows in n8n, connect your tools, and thoroughly test everything before launch.</p>
+            <h5 data-i18n="svc.step3.title">Train & Launch</h5>
+            <p style="font-size:0.9rem;" data-i18n="svc.step3.desc">I walk you and your team through the system, make sure everyone is comfortable, and we go live.</p>
           </div>
           <div class="col-md-3 mb-4">
             <div class="mb-3">
               <span style="display:inline-flex;align-items:center;justify-content:center;width:56px;height:56px;border-radius:50%;background:var(--accent-light);color:var(--accent);font-size:1.5rem;font-weight:700;">4</span>
             </div>
-            <h5>Launch & Support</h5>
-            <p style="font-size:0.9rem;">We go live. I monitor performance, optimize, and provide ongoing support as your needs grow.</p>
+            <h5 data-i18n="svc.step4.title">Ongoing Support</h5>
+            <p style="font-size:0.9rem;" data-i18n="svc.step4.desc">I monitor, optimize, and add features as your business grows. You're never on your own.</p>
           </div>
         </div>
       </div>
     </section>
 
     <!-- CTA -->
-    <section class="py-5 bg-light">
+    <section class="py-5">
       <div class="container text-center">
-        <h2 class="mb-3">Ready to automate?</h2>
-        <p class="lead mb-4">Let's discuss how AI-powered automation can save you time and grow your business.</p>
+        <h2 class="mb-3" data-i18n="svc.cta.title">Ready to run your business smarter?</h2>
+        <p class="lead mb-4" data-i18n="svc.cta.desc">Let's set up the right CRM and automations for your restaurant, store, or bar.</p>
         <a href="contact.html" class="btn btn-primary btn-lg mr-2">
-          <i class="fas fa-paper-plane mr-2"></i>Get in Touch
+          <i class="fas fa-paper-plane mr-2"></i><span data-i18n="svc.cta.btn">Get Started</span>
         </a>
-        <a href="index.html" class="btn btn-outline-primary btn-lg">
-          View My Background
-        </a>
+        <a href="index.html" class="btn btn-outline-primary btn-lg" data-i18n="svc.cta.btn2">View My Background</a>
       </div>
     </section>
 
@@ -268,7 +294,7 @@
       <div class="container">
         <div class="row align-items-center">
           <div class="col-md-4 text-center text-md-left mb-2 mb-md-0">
-            <a href="#top" class="text-white" style="font-size:0.9rem;">Back to top</a>
+            <a href="#top" class="text-white" style="font-size:0.9rem;" data-i18n="footer.top">Back to top</a>
           </div>
           <div class="col-md-4 text-center mb-2 mb-md-0">
             <div class="footer-social">
@@ -287,5 +313,6 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
     <script src="index.js" charset="utf-8"></script>
+    <script src="lang.js"></script>
   </body>
 </html>
